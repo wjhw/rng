@@ -141,6 +141,13 @@
     <script src="/public/js/common.js"></script>
     <script>
 
+        require.config({
+            baseUrl: '/public',
+            paths: {
+                jquery: 'assets/jquery/jquery.min'
+            }
+        });
+
         // $.ajax({
         //     // http://localhost:3000/employee/employeeLogin
         //     url: '/api/employee/employeeLogin',
